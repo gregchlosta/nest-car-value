@@ -3,9 +3,24 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "grzegorz.chlosta@gmail.com",
+  "email": "grzegorz.chlosta2@gmail.com",
   "password": "zaq1xsw2"
 }
+
+### Login
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+  "email": "grzegorz.chlosta1@gmail.com",
+  "password": "zaq1xsw2"
+}
+
+### Get logged in user
+GET http://localhost:3000/auth/whoami
+
+### Signout
+GET http://localhost:3000/auth/signout
 
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/2
@@ -24,4 +39,4 @@ Content-Type: application/json
 }
 
 ### Delete a particular user with a given ID
-DELETE  http://localhost:3000/auth/1
+DELETE  http://localhost:3000/auth/6
