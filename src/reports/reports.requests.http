@@ -1,10 +1,15 @@
-### Create a new user
-POST http://localhost:3000/auth/signup
+### Create a new report
+POST http://localhost:3000/reports
 Content-Type: application/json
 
 {
-  "email": "grzegorz.chlosta@gmail.com",
-  "password": "zaq1xsw2"
+  "make": "Toyota",
+  "model": "Highlander",
+  "year": 2003,
+  "mileage": 230000,
+  "lng": 0,
+  "lat": 0,
+  "price": 5000
 }
 
 ### Login
