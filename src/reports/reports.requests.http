@@ -6,10 +6,10 @@ Content-Type: application/json
   "make": "Toyota",
   "model": "Highlander",
   "year": 2003,
-  "mileage": 230000,
+  "mileage": 430000,
   "lng": 0,
   "lat": 0,
-  "price": 5000
+  "price": 3000
 }
 
 ### Approve an existing request
