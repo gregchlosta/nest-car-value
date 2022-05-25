@@ -12,36 +12,13 @@ Content-Type: application/json
   "price": 5000
 }
 
-### Login
-POST http://localhost:3000/auth/signin
+### Approve an existing request
+PATCH http://localhost:3000/reports/6
 Content-Type: application/json
 
 {
-  "email": "grzegorz.chlosta1@gmail.com",
-  "password": "zaq1xsw2"
+  "approved": true
 }
 
-### Get logged in user
-GET http://localhost:3000/auth/whoami
-
-### Signout
-GET http://localhost:3000/auth/signout
-
-### Find a particular user with a given ID
-GET http://localhost:3000/auth/2
-
-
-### Find a particular user with a given email
-GET http://localhost:3000/auth?email=grzegorz.chlosta@gmail.com
-
-### Update existing user
-PATCH http://localhost:3000/auth/1
-Content-Type: application/json
-
-{
-  "email": "grzegorz.chlosta@gmail.com",
-  "password": "zaq1xsw2cde3"
-}
-
-### Delete a particular user with a given ID
-DELETE  http://localhost:3000/auth/6
+### Get an estimate for an existing vehicle
+GET http://localhost:3000/reports?make=Toyota&model=Highlander&year=2003&mileage=230000&lng=0&lat=0
